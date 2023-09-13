@@ -1,5 +1,5 @@
 /**
-This is Async Problem 2.   
+This is Async Problem 2. This program takes an int input from the command line and makes change from the number of cents.
     @author    P.Chu
     @collaborator B.Cornish
     @collaborator L.Moffitt
