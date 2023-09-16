@@ -27,16 +27,17 @@ public class vendingreceiver_2 {
 
 
 
-    while(balance < 3.1 || vend == 0) {
-
-         System.out.print("Please enter a coin : ");
+    while((balance < 3.01) && (vend == 0)) {
+        System.out.println(vend);
+        System.out.print("Please enter a coin : ");
 
         moneyIn = in.next();
-
+        
         // System.out.println("Coin in: " + moneyIn);
-
+        
         switch (moneyIn) {
 
+            
             case ("p"): // penny
                 balance += 0.01;
                 break;
@@ -75,8 +76,10 @@ public class vendingreceiver_2 {
                 break;
             case ("V"):
                 vend = 1;
+                break;
             case ("v"):
                 vend = 1;
+                break;
             default:
                 System.out.println("Invalid Coin Entered");
         }
