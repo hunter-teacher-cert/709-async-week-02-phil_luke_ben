@@ -49,21 +49,21 @@ public class VendingCents {
           //subtract dimes from amount
           amount = amount - dimes * 10;
         }
-        if (amount/5 > 0) {
+        if (amount / 5 > 0) {
           //storing number of nickels
-          nickels = amount/5;
+          nickels = amount / 5;
           //subtract nickels from amount
           amount = amount - nickels * 5;
         }
        if (amount/1 > 0) {
           //storing number of pennies
-          nickels = amount/1;
+          pennies = amount/1;
           //subtract pennies from amount
-          amount = amount - pennies * 5;
+          amount = amount - pennies * 1;
         }
 
       
-        System.out.printf("Here are %d golden dollars, %d half dollars, %d quarters, %d dimes, and %d pennies", goldenDollars, halfDollars, quarters, dimes, nickels, pennies);
+        System.out.printf("Here are %d golden dollars, %d half dollars, %d quarters, %d dimes, %d nickels and %d pennies", goldenDollars, halfDollars, quarters, dimes, nickels, pennies);
     }
 }
 
